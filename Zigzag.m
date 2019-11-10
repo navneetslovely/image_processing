@@ -10,7 +10,7 @@ Q = [01 02 06 07;
      10 11 15 16];
   
 %% Init
-tmp = reshape(1:numel(Q), size(Q));
+tmp = reshape(1:numel(Q1), size(Q1));
  
 %% Flip left/right -> Diagonal matrix -> Flip left/right again
 afterFliplr1 = fliplr( tmp );
@@ -26,6 +26,6 @@ orderNonZero = afterFlipudOdd;
 orderNonZero( orderNonZero==0 ) = [];
  
 %% Get elements (by zigzag-order)
-ZigZag = Q(orderNonZero)
+ZigZag = Q1(orderNonZero)
  
 %keyboard
