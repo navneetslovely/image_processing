@@ -163,7 +163,7 @@ imshow(uint8(Y_star))
 imshow(uint8(Cb_Star1))
 %figure,imshow(uint8(Cb))
 imshow(uint8(Cr_Star1))
-%figure,imshow(uint8(Cr))
+figure,imshow(uint8(Cr))
 imshow(uint8(I));title('original');
 figure,imshow(uint8(I_m));title('RGB reduced colors');
 
